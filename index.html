@@ -30,165 +30,129 @@
         @media screen and (min-width:320px) and (max-width:425px) {
 
 
-        .box-card {
-            width: 335px;
-            margin: 30px 0px 30px 0px;
-            border-radius: 12px;
-            position: relative;
-            display: inherit;
-            transform-style: preserve-3d;
-            transition: 0.5s;
-        }
+            .box-card {
+                width: 335px;
+                margin: 30px 0px 30px 0px;
+                border-radius: 12px;
+                position: relative;
+                display: inherit;
+                transform-style: preserve-3d;
+                transition: 0.5s;
+            }
 
-        .box-card:hover {
-            transform: rotateY(180deg);
-        }
+            .box-card:hover {
+                transform: rotateY(180deg);
+            }
 
-        .card {
-            height: 480px;
-            border-radius: 12px;
-        }
+            .card {
+                height: 480px;
+                border-radius: 12px;
+            }
 
-        .card-front {
-            backface-visibility: hidden;
-            background-color: rgb(241, 241, 60);
-            padding: 10px;
-            width: 100%;
-        }
+            .card-front {
+                backface-visibility: hidden;
+                background-color: rgb(241, 241, 60);
+                padding: 10px;
+                width: 100%;
+            }
 
-        .back-ground-front {
-            height: 100%;
-            border-radius: 3px;
-            background-image: url(assets/background.webp);
-            background-size: cover;
-            background-position: center;
-        }
+            .back-ground-front {
+                height: 100%;
+                border-radius: 3px;
+                background-image: url(assets/background.webp);
+                background-size: cover;
+                background-position: center;
+            }
 
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            padding: 10px 20px 0px 20px;
-        }
+            .header {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                padding: 10px 20px 0px 20px;
+            }
 
-        .box-pv-elem {
-            display: flex;
-            align-items: flex-end;
-            gap: 5px;
-        }
+            .box-pv-elem {
+                display: flex;
+                align-items: flex-end;
+                gap: 5px;
+            }
 
-        .elem {
-            display: flex;
-            width: 30px;
-            height: 30px;
-            border-radius: 15px;
-            justify-content: center;
-            align-items: center;
-        }
+            .elem {
+                display: flex;
+                width: 30px;
+                height: 30px;
+                border-radius: 15px;
+                justify-content: center;
+                align-items: center;
+            }
 
-        .fuoco {
-            background-image: url(assets/bg-elem-fuoco.webp);
-            background-position: center;
-        }
+            .fuoco {
+                background-image: url(assets/bg-elem-fuoco.webp);
+                background-position: center;
+            }
 
-        .box-immagine-carta {
-            margin: 0px 20px 0px 20px;
-            padding: 5px;
-            border-radius: 3px;
-            background: linear-gradient(127deg, rgba(185, 184, 72, 1) 0%, rgba(255, 255, 255, 1) 26%, rgba(185, 184, 72, 1) 52%, rgba(255, 255, 255, 1) 79%, rgba(185, 184, 72, 1) 100%);
-            box-shadow: 6px 6px 15px 0px #a3a3a3;
-        }
+            .box-immagine-carta {
+                margin: 0px 20px 0px 20px;
+                padding: 5px;
+                border-radius: 3px;
+                background: linear-gradient(127deg, rgba(185, 184, 72, 1) 0%, rgba(255, 255, 255, 1) 26%, rgba(185, 184, 72, 1) 52%, rgba(255, 255, 255, 1) 79%, rgba(185, 184, 72, 1) 100%);
+                box-shadow: 6px 6px 15px 0px #a3a3a3;
+            }
 
-        .immagine-carta {
-            border-radius: 3px;
-            width: 100%;
-            height: 100%;
-        }
+            .immagine-carta {
+                border-radius: 3px;
+                width: 100%;
+                height: 100%;
+            }
 
-        .info-pokemon {
-            border-radius: 3px;
-            margin: 4px 29px 0px 29px;
-            font-size: 11px;
-            color: black;
-            background: linear-gradient(127deg, rgba(185, 184, 72, 1) 0%, rgba(255, 255, 255, 1) 26%, rgba(185, 184, 72, 1) 52%, rgba(255, 255, 255, 1) 79%, rgba(185, 184, 72, 1) 100%);
-            text-align: center;
-            width: 253px;
-            padding: 2px;
-        }
+            .info-pokemon {
+                border-radius: 3px;
+                margin: 4px 29px 0px 29px;
+                font-size: 11px;
+                color: black;
+                background: linear-gradient(127deg, rgba(185, 184, 72, 1) 0%, rgba(255, 255, 255, 1) 26%, rgba(185, 184, 72, 1) 52%, rgba(255, 255, 255, 1) 79%, rgba(185, 184, 72, 1) 100%);
+                text-align: center;
+                width: 253px;
+                padding: 2px;
+            }
 
-        .attacco {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin: 20px 20px;
-        }
+            .card-back {
+                position: absolute;
+                transform: rotateY(180deg);
+                backface-visibility: hidden;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                background-color: #0505db;
+                padding: 10px;
+            }
 
-        .normale {
-            background-image: url(assets/bg-elem-normale.webp);
-            background-position: center;
-        }
+            .back-ground-back {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                height: 100%;
+                border-radius: 3px;
+                background: radial-gradient(circle, rgba(27, 27, 159, 1) 25%, rgba(177, 177, 177, 1) 57%, rgba(27, 27, 159, 1) 87%);
+            }
 
-        hr {
-            border: 1px solid black;
-            width: 290px;
-            margin: 2px 11.5px 2px 11.5px;
-        }
+            .box-titolo-back {
+                display: flex;
+                justify-content: center;
+            }
 
-        .attacco-due {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin: 0px 20px 0px 5px;
-        }
+            .titolo-uno {
+                width: 95%;
+                margin-top: 5px;
+            }
 
-        .elem-attacco-due {
-            display: flex;
-            gap: 7px;
-            margin-right: 5px;
-        }
-
-        .nome-mossa-due {
-            font-size: 1.17em;
-            font-weight: bold;
-        }
-
-        .card-back {
-            position: absolute;
-            transform: rotateY(180deg);
-            backface-visibility: hidden;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            background-color: #0505db;
-            padding: 10px;
-        }
-
-        .back-ground-back {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            height: 100%;
-            border-radius: 3px;
-            background: radial-gradient(circle, rgba(27, 27, 159, 1) 25%, rgba(177, 177, 177, 1) 57%, rgba(27, 27, 159, 1) 87%);
-        }
-
-        .box-titolo-back {
-            display: flex;
-            justify-content: center;
-        }
-
-        .titolo-uno {
-            width: 95%;
-            margin-top: 5px;
-        }
-
-        .titolo-due {
-            transform: rotateX(180deg) rotateY(180deg);
-            width: 95%;
-            margin-bottom: 5px;
-        }
+            .titolo-due {
+                transform: rotateX(180deg) rotateY(180deg);
+                width: 95%;
+                margin-bottom: 5px;
+            }
 
         }
     </style>
@@ -207,7 +171,7 @@
                         <div class="box-pv-elem">
                             <h3>50 PV</h3>
                             <div class="elem fuoco">
-                                <img src="assets/fire24.png" alt="icona fiamma">
+                                <img src="assets/fire27.png" alt="icona fiamma">
                             </div>
                         </div>
                     </div>
@@ -216,31 +180,6 @@
                     </div>
                     <div class="info-pokemon">
                         <h6>Pokèmon lucertola. Lunghezza: 0.6 m;Peso: 8,5 kg.</h6>
-                    </div>
-                    <div class="attacco">
-                        <div class="elem normale">
-                            <img src="assets/favourite24.png" alt="icona stella">
-                        </div>
-                        <h3>Graffio</h3>
-                        <h3>10</h3>
-                    </div>
-                    <hr>
-                    <div class="attacco-due">
-                        <div class="elem-attacco-due">
-                            <div class="elem normale">
-                                <img src="assets/favourite24.png" alt="icona stella">
-                            </div>
-                            <div class="elem fuoco">
-                                <img src="assets/fire24.png" alt="icona stella">
-                            </div>
-                        </div>
-                        <div class="descrizione-mossa-due">
-                            <span class="nome-mossa-due">Braciere</span>
-                            <span>Scarta una carta Energia <img src="assets/icona-elem-fuoco.webp"
-                                    alt="icona elemento fuoco"> assegnata a Charmander
-                                per poter usare questo attacco</span>
-                        </div>
-                        <h3>10</h3>
                     </div>
                 </div>
             </div>
